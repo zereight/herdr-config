@@ -243,13 +243,6 @@
                           "frames": "panel"
                         }
                       }
-                    },
-                    {
-                      "id": "agenttrail",
-                      "type": "block",
-                      "content": {
-                        "mod": "agenttrail"
-                      }
                     }
                   ],
                   "active": "files"
