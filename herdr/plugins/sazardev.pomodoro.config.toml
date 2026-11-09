@@ -1,0 +1,28 @@
+active_preset = "classic"
+mood = "digital"
+auto_start_next = false
+sound = true
+notify = true
+
+[[preset]]
+name = "classic"
+work_minutes = 25
+short_break_minutes = 5
+long_break_minutes = 15
+sessions_before_long_break = 4
+
+[[preset]]
+name = "deep-work"
+work_minutes = 50
+short_break_minutes = 10
+long_break_minutes = 20
+sessions_before_long_break = 2
+
+[[preset]]
+name = "quick"
+work_minutes = 15
+short_break_minutes = 3
+long_break_minutes = 10
+sessions_before_long_break = 4
+
+[colors]

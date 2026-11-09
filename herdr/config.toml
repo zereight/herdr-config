@@ -1,0 +1,111 @@
+onboarding = false
+
+[theme]
+name = "dracula"
+auto_switch = false
+dark_name = "dracula"
+light_name = "catppuccin-latte"
+[ui.sound]
+enabled = true
+
+[ui.toast]
+delivery = "terminal"
+
+[ui]
+tab_bar_right = [
+  { type = "command", command = "__HOME__/.config/herdr/plugins/config/herdr-pomodoro/pomodoro-status.sh", interval_seconds = 1, timeout_seconds = 1 },
+]
+agent_panel_scope = "current"
+show_agent_labels_on_pane_borders = true
+
+status_indicators = "dots"
+[experimental]
+pane_history = true
+
+switch_ascii_input_source_in_prefix = true
+[advanced]
+scrollback_limit_bytes = 2000000
+
+[keys]
+prefix = "ctrl+b"
+help = "prefix+?"
+# direct — shift+alt (Option+Shift)
+previous_tab = "shift+alt+left"
+next_tab = "shift+alt+right"
+previous_workspace = "shift+alt+up"
+next_workspace = "shift+alt+down"
+new_tab = "shift+alt+n"
+rename_tab = "shift+alt+t"
+close_tab = "shift+alt+w"
+
+[[keys.command]]
+key = "cmd+shift+g"
+type = "plugin_action"
+command = "chmarax.gitview.toggle"
+description = "git view sidebar"
+
+[[keys.command]]
+key = "cmd+g"
+type = "plugin_action"
+command = "chmarax.gitview.toggle-tab"
+description = "git view tab"
+
+[[keys.command]]
+key = "ctrl+alt+g"
+type = "plugin_action"
+command = "chmarax.gitview.toggle-tab"
+description = "git view tab (terminal-safe)"
+
+[[keys.command]]
+key = "ctrl+alt+s"
+type = "plugin_action"
+command = "chmarax.gitview.toggle"
+description = "git view sidebar (terminal-safe)"
+
+[[keys.command]]
+key = "shift+alt+y"
+type = "plugin_action"
+command = "persiyanov.reviewr.toggle"
+description = "reviewr sidebar"
+
+[[keys.command]]
+key = "prefix+ctrl+m"
+type = "plugin_action"
+command = "mfp.player.open"
+description = "mfp: player"
+
+[[keys.command]]
+key = "prefix+ctrl+t"
+type = "plugin_action"
+command = "mfp.player.toggle"
+description = "mfp: play/pause"
+
+[[keys.command]]
+key = "prefix+ctrl+f"
+type = "plugin_action"
+command = "mfp.player.next"
+description = "mfp: next"
+
+[[keys.command]]
+key = "prefix+ctrl+comma"
+type = "plugin_action"
+command = "mfp.player.prev"
+description = "mfp: previous"
+
+[[keys.command]]
+key = "prefix+ctrl+i"
+type = "plugin_action"
+command = "mfp.player.now-playing"
+description = "mfp: now playing"
+
+[[keys.command]]
+key = "prefix+ctrl+p"
+type = "plugin_action"
+command = "herdr-pomodoro.menu"
+description = "Pomodoro menu"
+
+[[keys.command]]
+key = "prefix+ctrl+n"
+type = "plugin_action"
+command = "herdr-pomodoro.next"
+description = "Pomodoro: next segment"
